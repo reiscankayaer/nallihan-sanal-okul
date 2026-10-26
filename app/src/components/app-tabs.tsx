@@ -11,21 +11,31 @@ export default function AppTabs() {
     <NativeTabs
       backgroundColor={colors.background}
       indicatorColor={colors.backgroundElement}
-      labelStyle={{ selected: { color: colors.text } }}>
+      labelStyle={{ selected: { color: colors.text } }}
+      labelVisibilityMode="labeled">
       <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/home.png')}
-          renderingMode="template"
-        />
+        <NativeTabs.Trigger.Label>Ana Sayfa</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="house" md="home" />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="explore">
-        <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
-        />
+      <NativeTabs.Trigger name="yemek">
+        <NativeTabs.Trigger.Label>Yemek</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="fork.knife" md="restaurant" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="duyurular">
+        <NativeTabs.Trigger.Label>Duyurular</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="megaphone" md="campaign" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="program">
+        <NativeTabs.Trigger.Label>Program</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="calendar" md="calendar_month" />
+      </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="linkler">
+        <NativeTabs.Trigger.Label>Linkler</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="link" md="link" />
       </NativeTabs.Trigger>
     </NativeTabs>
   );
